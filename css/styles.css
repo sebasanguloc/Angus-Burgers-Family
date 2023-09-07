@@ -78,6 +78,8 @@ html {
     align-items: center;
     gap: 10px;
     margin-top: 20px;
+    flex-flow: row;
+
 }
 
 .abajo {
@@ -85,9 +87,12 @@ html {
     
 }
 
-.arriba {
+.arriba-d {
+    z-index: 1;  
+}
+
+.arriba-i {
     z-index: 1;
-    
 }
 
 .slider-screen img {
@@ -104,6 +109,40 @@ html {
     border: 0;
     padding: 200px 0;
     background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .slider-screen img {
+        width: 733px;
+        position: relative;
+    }
+
+    .arriba-d {
+        position: absolute;
+        right: 25px;
+    }
+
+    .arriba-i {
+        position: absolute;
+        left: 25px;
+    }
+}
+
+@media (max-width: 390px) {
+    .slider-screen img {
+        width: 388px;
+        position: relative;
+    }
+
+    .arriba-d {
+        position: absolute;
+        right: 2px;
+    }
+
+    .arriba-i {
+        position: absolute;
+        left: 2px;
+    }
 }
 
 
