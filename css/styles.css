@@ -4,6 +4,7 @@
     --colorNegro: black;
     --fontPrincipal: 'Roboto Mono', monospace;
     --fontSegundo: 'Roboto', sans-serif;
+    --fontTercero: sans-serif;
 }
 
 html {
@@ -44,7 +45,7 @@ html {
 .nav-list a {
     text-decoration: none;
     color: var(--colorNegro);
-    font-family: var(--fontPrincipal);
+    font-family: var(--fontTercero);
     font-size: 25px;
     font-weight: 500;
     padding: 10px;
@@ -67,19 +68,22 @@ html {
     }
 
     .nav-list a {
-        padding: 7px;
+        padding: 5px;
+        font-size: 20px;
     }
 }
 
 /** Slider **/
 .container-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-    flex-flow: row;
+    max-width: 90%;
+    margin: 20px auto;
 
+}
+
+.slider-responsive {
+    display: grid;
+    grid-template-columns: 2.5% 95% 2.5%;
+    place-items: center;
 }
 
 .abajo {
@@ -96,54 +100,49 @@ html {
 }
 
 .slider-screen img {
-    width: 1300px;
+    width: 100%;
 }
 
-.btn-right {
-    border: 0;
-    padding: 200px 0;
-    background-color: transparent;
+.slider-di {
+    display: flex;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
 .btn-left {
     border: 0;
-    padding: 200px 0;
     background-color: transparent;
+    font-size: 40px;
+    padding: 80px 3px;
 }
+
+.btn-right {
+    border: 0;
+    background-color: transparent;
+    font-size: 40px;
+    padding: 80px 3px;
+}
+
 
 @media (max-width: 768px) {
-    .slider-screen img {
-        width: 733px;
-        position: relative;
+    .slider-responsive {
+        column-gap: 2px;
     }
 
-    .arriba-d {
-        position: absolute;
-        right: 25px;
+    .container-slider {
+        margin: 10px auto;
     }
 
-    .arriba-i {
-        position: absolute;
-        left: 25px;
+    .btn-right , .btn-left {
+        font-size: 17px;
     }
+
 }
 
-@media (max-width: 390px) {
-    .slider-screen img {
-        width: 388px;
-        position: relative;
-    }
 
-    .arriba-d {
-        position: absolute;
-        right: 2px;
-    }
 
-    .arriba-i {
-        position: absolute;
-        left: 2px;
-    }
-}
 
 
 
