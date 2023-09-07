@@ -1,0 +1,57 @@
+:root {
+    --colorPrimario: #F48A2F;
+    --colorBlanco: white;
+    --colorNegro: black;
+    --fontPrincipal: 'Roboto Mono', monospace;
+    --fontSegundo: 'Roboto', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/** NAVEGACION **/
+
+.navegation-total {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotype img {
+    max-width: 360px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: var(--colorNegro);
+    font-family: var(--fontPrincipal);
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-list a:hover {
+    background-color: #F48A2F;
+    
+}
