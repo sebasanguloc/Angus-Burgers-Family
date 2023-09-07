@@ -70,3 +70,44 @@ html {
         padding: 7px;
     }
 }
+
+/** Slider **/
+.container-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.abajo {
+    z-index: 0;
+    
+}
+
+.arriba {
+    z-index: 1;
+    
+}
+
+.slider-screen img {
+    width: 1300px;
+}
+
+.btn-right {
+    border: 0;
+    padding: 200px 0;
+    background-color: transparent;
+}
+
+.btn-left {
+    border: 0;
+    padding: 200px 0;
+    background-color: transparent;
+}
+
+
+
+
+
+
