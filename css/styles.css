@@ -48,10 +48,25 @@ html {
     font-size: 25px;
     font-weight: 500;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 .nav-list a:hover {
-    background-color: #F48A2F;
-    
+    background-color: #F48A2F; 
+}
+
+@media (max-width: 768px) {
+    .logotype img {
+        max-width: 250px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .nav-list a {
+        padding: 7px;
+    }
 }
