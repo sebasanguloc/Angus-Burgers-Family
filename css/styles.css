@@ -224,17 +224,13 @@ html {
 
 .cards-extras {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 70px;
 }
 
-@media (max-width: 678px) {
+@media (max-width: 768px) {
     .cards-h1 {
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 20px;
-    }
-
-    .cards-extras {
         column-gap: 20px;
     }
 
