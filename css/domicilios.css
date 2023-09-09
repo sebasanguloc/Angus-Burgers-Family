@@ -80,16 +80,18 @@ html {
     }
 }
 
+/** MAPA **/
 
+.map-total {
+    display: grid;
+    place-items: center;
+    margin: 40px 40px;
+}
 
-
-
-
-
-
-
-
-
+.map iframe {
+    border-radius: 10px;
+    border: none;
+}
 
 /** FOOTER **/
 
