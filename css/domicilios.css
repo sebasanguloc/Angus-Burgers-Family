@@ -31,6 +31,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .logotype img {
@@ -82,6 +83,10 @@ html {
 
 /** MAPA **/
 
+/* .container-map {
+    max-width: 100vh;
+}
+
 .map-total {
     display: grid;
     place-items: center;
@@ -91,9 +96,31 @@ html {
 .map iframe {
     border-radius: 10px;
     border: none;
+} */
+
+
+@media (min-width: 800px) and (max-width: 40000px) {
+    ._3MWH201N6sVGASvrOpe3j {
+        position: sticky;
+    }
+}
+
+.mapa {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.mapa iframe {
+    border: none;
 }
 
 /** FOOTER **/
+
+.footer {
+    margin-top: 20px;
+}
 
 .bg-footer {
     background-color: var(--colorPrimario);
