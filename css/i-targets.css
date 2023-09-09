@@ -3,6 +3,7 @@
     --colorBlanco: white;
     --colorNegro: black;
     --colorNeutro: #eeeef3;
+    --colorAmarillo: #d9b10d;
 
     --fontPrincipal: 'Roboto Mono', monospace;
     --fontSegundo: 'Roboto', sans-serif;
@@ -84,26 +85,34 @@ html {
 /** TARGET **/
 
 .section-c {
-    display: grid;
-    place-items: center;
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
-.card-global {
-    max-width: 900px;
-    max-height: 600px;
-    display: flex;
-    flex-direction: row;
-    background-color: var(--colorNegro);
-}
-
-.container-img {
-    max-width: 100%;
-}
-
-.card-global img {
+.producto img {
     width: 100%;
-    height: 100%;
+}
+
+.description p {
+    font-family: var(--fontCuarto);
+    color: var(--colorNegro);
+    font-size: 20px;
+    text-align: center;
+}
+
+.description h2 {
+    font-family: var(--fontCuarto);
+    color: var(--colorNegro);
+    font-size: 45px;
+}
+
+.description a {
+    font-weight: bold;
+    color: var(--colorBlanco);
+    text-decoration: none;
+    font-family: var(--fontCuarto);
+    font-size: 20px;
+    background-color: var(--colorAmarillo);
+    padding: 10px;
 }
 
 .description {
@@ -111,48 +120,47 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    width: 700px;
-    gap: 30px;
-}
-
-.container-name h2 {
-    color: var(--colorBlanco);
-    font-family: var(--fontCuarto);
-    font-weight: 300;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.container-ingredients {
-    width: 500px;
-}
-
-.container-ingredients p {
-    color: var(--colorBlanco);
-    font-family: var(--fontCuarto);
-    font-size: 20px;
-    text-align: center;
-}
-
-.container-see p {
-    font-family: var(--fontCuarto);
-    color: #f1c50e;
-    text-decoration: none;
-    padding: 10px 0;
-    font-size: 20px;
-}
-
-.container-logs a {
-    text-decoration: none;
-    color: var(--colorNegro);
-    font-family: var(--fontCuarto);
+    gap: 35px;
     padding: 15px;
-    font-weight: bold;
-    background-color: #f1c50e;
-    width: 170px;
 }
+
+.description p:nth-child(3) {
+    color: var(--colorAmarillo);
+}
+
+@media (min-width: 768px) {
+
+    .producto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 80%;
+        margin: 50px auto;
+        background-color: var(--colorNegro);
+    }
+    
+    .producto img {
+        width: 100%;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 35px;
+        padding: 15px;
+    }
+
+    .description h2 {
+        color: var(--colorBlanco);
+    }
+
+    .description p {
+        color: var(--colorBlanco);
+        text-align: center;
+    }
+}
+
 
 /** FOOTER **/
 
