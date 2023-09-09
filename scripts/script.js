@@ -11,12 +11,12 @@ document.imagen.src = imagenes[suma];
 const derecha = document.querySelector('#derecha');
 const izquierda = document.querySelector('#izquierda');
 
-let interval = setInterval(imagenSiguienteNext, 2000); 
+let interval = setInterval(imagenSiguienteNext, 5000); 
 
 derecha.addEventListener('click', () => {
     clearInterval(interval);
     imagenSiguienteNext();
-    interval = setInterval(imagenSiguienteNext, 2000);
+    interval = setInterval(imagenSiguienteNext, 5000);
 });
 
 function imagenSiguienteNext() {
@@ -32,7 +32,7 @@ function imagenSiguienteNext() {
 izquierda.addEventListener('click', () => {
     clearInterval(interval);
     imagenAnteriorBack();
-    interval = setInterval(imagenSiguienteNext, 2000);
+    interval = setInterval(imagenSiguienteNext, 5000);
 });
 
 function imagenAnteriorBack() {
