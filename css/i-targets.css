@@ -85,7 +85,7 @@ html {
 /** TARGET **/
 
 .section-c {
-    margin: 20px 0;
+    margin: 20px auto;
 }
 
 .producto img {
@@ -176,7 +176,7 @@ html {
 }
 
 .f-primero img {
-    width: 170px;
+    width: 230px;
 }
 
 .f-segundo {
