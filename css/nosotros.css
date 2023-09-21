@@ -81,7 +81,45 @@ html {
     }
 }
 
+/* Nosotros */
+.container-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
 
+.container-nosotros {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 75%;
+}
+
+.nosotros h2 {
+    font-family: var(--fontTercero);
+    margin: 0 0 12px 0;
+}
+
+.nosotros p {
+    font-family: var(--fontTercero);
+    font-size: 18px;
+}
+
+.image-nosotros {
+    display: grid;
+    place-items: center;
+}
+
+.image-nosotros img{
+    width: 300px;
+}
+
+@media (max-width: 768px) {
+    .container-nosotros {
+        flex-direction: column;
+    }
+}
 
 /** FOOTER **/
 
