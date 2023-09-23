@@ -92,8 +92,8 @@ html {
 .container-nosotros {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    width: 75%;
+    gap: 50px;
+    width: 65%;
 }
 
 .nosotros h2 {
